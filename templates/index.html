@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression Model</title>
+</head>
+<body>
+    <h1>Regression Model</h1>
+    
+    <form action="/predict" method="post">
+        <label for="square_feet">Square Feet:</label>
+        <input type="text" id="square_feet" name="square_feet"><br><br>
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="text" id="bedrooms" name="bedrooms"><br><br>
+        <label for="bathrooms">Bathrooms:</label>
+        <input type="text" id="bathrooms" name="bathrooms"><br><br>
+        <label for="year_built">Year Built:</label>
+        <input type="text" id="year_built" name="year_built"><br><br>
+        <label for="neighborhood">Neighborhood:</label>
+        <select id="neighborhood" name="neighborhood">
+            <option value="Rural">Rural</option>
+            <option value="Suburb">Suburb</option>
+            <option value="Urban">Urban</option>
+            <!-- Add other neighborhoods as options -->
+        </select><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+    <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
