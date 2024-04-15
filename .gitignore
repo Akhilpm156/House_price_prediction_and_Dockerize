@@ -24,6 +24,9 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.best_model.pkl
+.scaler.pkl
+
 MANIFEST
 
 # PyInstaller
