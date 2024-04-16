@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request
-#from sklearn.linear_model import LinearRegression, Ridge, Lasso
-#from sklearn.ensemble import RandomForestRegressor
-#from sklearn.externals import joblib
 import numpy as np
 import pickle
 
